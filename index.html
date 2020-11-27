@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test pied de page pour petits écrans</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="description" content="pied de page de site web pour petits ecrans" />
+  <link rel="stylesheet" media="screen and (min-width: 800px)" href="css/main.css" type="text/css" />
+  <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/smallscreens.css" type="text/css" />
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</head>
+<body>
+  <section>
+    <h1>Test pied de page pour petits écrans</h1>
+  </section>
+    <div id="wrapper_pied">
+    	<div id="pied">
+    		<div class="colonnes">
+    		<h2>Sites de référence avec des critères familiaux<span id="showMoreref" class="showMe" onclick="showSMenu('ref');">+</span></h2>
+    			<div id="ref" class="menupied">
+    				<ul>
+    				  <li><a href="http://www.kids-in-mind.com">Kids in Mind</a></li>
+    				  <li><a href="http://www.almudi.org">Almudi</a></li>
+    				  <li><a href="http://www.screenit.com/">Screenit</a></li>
+    				  <li><a href="https://www.commonsensemedia.org/">Common Sense Media</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div class="colonnes">
+    			<h2>Sites généralistes sur le cinéma<span id="showMoresites" class="showMe" onclick="showSMenu('sites');">+</span></h2>
+    				<div id="sites" class="menupied">
+    					<ul>
+    						<li><a href="http://www.allocine.fr/">Allocin&eacute;</a></li>
+    						<li><a href="https://lecran.club/">Lecran.fr</a></li>
+    						<li><a href="http://www.imdb.com/">Imdb</a></li>
+    					</ul>
+    				</div>
+    		</div>
+    		<div class="colonnes">
+    		<h2>Explication des cotations utilisées<span id="showMorecot" class="showMe" onclick="showSMenu('cot');">+</span></h2>
+    			<div id="cot" class="menupied">
+    				<ul>
+    						<li><a href="#">#liste1</a></li>
+    				</ul>
+    			</div>
+    		</div>
+    		<div style="clear:both; "></div>
+    	</div><!--pied-->
+    </div><!--wrapper_pied-->
+    <script type="text/javascript">
+    function showSMenu(id)
+    {
+    	if(document.getElementById(id).style.display=="")
+    	{
+    		document.getElementById(id).style.display="none";
+    	}
+    	if(document.getElementById(id).style.display=="none")
+    	{
+    		document.getElementById(id).style.display="inline";
+    		document.getElementById('showMore'+id).innerHTML='-';
+    	}
+    	else
+    	{
+    		document.getElementById(id).style.display="none";
+    		document.getElementById('showMore'+id).innerHTML='+';
+    	}
+    	return true;
+    }
+
+
+    </script>
+  </body>
+  </html>

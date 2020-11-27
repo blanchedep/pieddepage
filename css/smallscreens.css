@@ -1,0 +1,35 @@
+@media screen and (max-width: 800px)
+{
+body {margin:0; padding:0; font-family:Arial, Helvetica, sans-serif; background-color:#fff; font-size:0.9em;}
+
+  /*Pied de page*/
+  #wrapper_pied{background-color:#4d7193; width:100%;}
+  #pied{width:90%; margin:0 auto; padding-top:1em; color:#FFCC33;}
+
+  #pied h2{color:#FFFFFF;}
+  #pied a {color:#FFCC33;}
+  #pied a:hover {color:#FFCC33; text-decoration:underline;}
+  #pied li{list-style-type:square; padding:1em; margin-left:2em;}
+
+.colonnes{padding:2%; margin:0 auto;}
+.colonnes h3{color:#FFFFFF;}
+
+.menupied{display:none;}
+
+.showMe {
+  display:inline;
+  float:right;
+  cursor:pointer;
+  font-family: 'Roboto', sans-serif;
+  line-height:25px;
+  font-size: 30px;
+  color: #fff;
+  width: 40px;
+  margin-bottom:0;
+}
+
+.showMe2 {
+  font-size:16px;
+  line-height:23px;
+}
+}
